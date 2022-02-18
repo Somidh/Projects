@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+body{
+    font-family: 'Roboto',sans-serif;
+    /* background-image: url(./IMG/takahiro-taguchi-TwqV_oJh6Cs-unsplash.jpg); */
+    /* background-size: cover;
+    background-position: center -617px;
+    background-repeat: no-repeat; */
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(./IMG/takahiro-taguchi-TwqV_oJh6Cs-unsplash.jpg)no-repeat center -40rem/cover;
+    max-height: 100vh; 
+    overflow: hidden;
+}
+
+
+header{
+    display: flex;
+    
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(90vh - 80px);
+        color: #fdf6f7;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 40vw;
+    margin-left: 200px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+.btn{
+    margin-top: 30px;
+
+}
+.btn a{
+    text-decoration: none;
+    border-color:#fdf6f7;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    
+    border: 2px solid #fff;
+    color: #fdf6f7;
+    padding: 10px 20px;
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 10px;
+    margin-top: -1px;
+}
+.content h1{
+    font-size: 3rem;
+    line-height: 10px;
+}
+
+.heading a{
+    text-decoration: none;
+    color: #d69b2f;
+    font-size: 1.3em;
+}
+
+nav ul li a:hover{
+    color: white;
+    transition: 0.7s;
+
+}
+
+.btn a:hover{
+    color: #000;
+    /* border-color: ; */
+}
