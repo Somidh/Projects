@@ -117,7 +117,11 @@ section {
 
 }
 
-.featured .featured__items .price{
+.featured .featured__details{
+    
+}
+
+.featured .featured__details .price{
     display: block;
     font-weight: 700;
     font-size: 2.5rem;
@@ -138,3 +142,64 @@ section {
     background: #2193b0;
     z-index: -1;
 }
+
+.product{
+    background: radial-gradient(var(--clr-inner, yellow),var(--clr-outer,orange));
+    padding: 3em;
+    border-radius: 1em;
+    margin-bottom: 3em;
+    text-align: left;
+}
+
+.our-products .product .product__title{
+    font-size: 4rem;
+    line-height: 1.1;
+    color: #006fb4;
+    text-shadow: 0 0 .2em rgba(0, 0, 0, .2);
+}
+
+.shoe-red{
+    --clr-inner: #faa700;
+    --clr-outer: #e48d00;
+    --clr-accent: #a1173c;
+}
+
+.shoe-white{
+    --clr-inner: #fce4b3;
+    --clr-outer: #eac886;
+    --clr-accent: #2f4858;
+
+}
+
+.shoe-blue{
+    --clr-inner:#6dd5ed;
+    --clr-outer: #2193b0;
+    --clr-accent:#008951;
+}
+
+.product .buy-now{
+    color:white
+}
+
+.product__image{
+    margin: -5em 0 0 0;
+}
+
+
+
+
+
+@media (min-width: 45em){
+    .product__image{
+        float: right;
+        width: 65%;
+    }
+}
+
+
+
+
+
+
+
+
