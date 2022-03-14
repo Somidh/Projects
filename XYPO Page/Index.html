@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <title>Website design</title>
 </head>
 
@@ -33,12 +34,12 @@
 
     <nav id="sideNav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">features</a></li>
-            <li><a href="#">course</a></li>
-            <li><a href="#">offer</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#features">features</a></li>
+            <li><a href="#courses">course</a></li>
+            <li><a href="#offer">offer</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
     <img src="/IMG/menu.png" id="menuBtn" alt="">
@@ -112,7 +113,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cum commodi porro temporibus
                         totam, voluptates culpa maxime aperiam expedita incidunt! Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Necessitatibus, consectetur!</p>
-                <button class="common-btn">View All Courses</button>
+                    <button class="common-btn">View All Courses</button>
 
                     <div class="line">
                         <span class="line-1"></span><br>
@@ -140,7 +141,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sint reiciendis. Error quo perferendis
                     est nemo commodi cupiditate tempore, ipsa fuga harum autem esse distinctio debitis ut, minima earum
                     non iusto id odit, deleniti amet. </p>
-                    <button class="common-btn">Start Free Trail</button>
+                <button class="common-btn">Start Free Trail</button>
 
                 <div class="line">
                     <span class="line-1"></span><br>
@@ -180,7 +181,7 @@
         </div>
     </section>
 
-<!-- Footer -->
+    <!-- Footer -->
 
     <section id="footer">
         <div class="container footer-row">
@@ -216,7 +217,8 @@
                         <small>copypright 2020 Xypo</small>
                     </div>
                     <div class="footer-logo">
-                         <img src="/IMG/logo.png" alt="">
+                        <img src="/IMG/logo.png" alt="">
+                        <button class="common-btn">English</button>
                     </div>
                 </div>
             </div>
@@ -224,7 +226,14 @@
         </div>
     </section>
 
+    <!-- Social Icons -->
 
+    <div class="social-icons">
+        <img src="/IMG/facebook.png" alt="">
+        <img src="/IMG/instagram.png" alt="">
+        <img src="/IMG/twitter.png" alt="">
+        <img src="/IMG/linkedin.png" alt="">
+    </div>
 
 
 
@@ -245,6 +254,12 @@
                 sideNav.style.right = "-250px";
             }
         }
+
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            speed: 1000,
+            speedAsDuration: true
+        });
+
     </script>
 </body>
 
