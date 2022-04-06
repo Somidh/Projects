@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.globe-icon {
+    /* content: " "; */
+    /* position: absolute; */
+    /* right: 10em; */
+    /* width: 10px; */
+    /* height: 1em; */
+    color: #fff;
+    margin-right: 5px;
+}
+
+.down-arrow {
+    /* width: 1em; */
+    /* height: 1em; */
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.right-arrow {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.footer-globe {
+    color: #757575;
+}
+
+.footer-down-arrow {
+    margin-left: 5px;
+    color: #757575
+}
+
+.download-btn {
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    border-bottom: 2px solid #fff;
+}
+
+body {
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .4), rgba(0, 0, 0, .9)), url(/IMG/1.jpg) no-repeat;
+    padding: 1em;
+    padding-bottom: 4em;
+}
+
+.header .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 4em; */
+}
+
+.header .nav-bar .logo img {
+    width: 5.8em;
+}
+
+
+.nav .lang-btn {
+    padding: 5px 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, .3);
+    border: 1px solid #fff;
+    /* margin-right: 10px; */
+}
+
+.nav .sign-in-btn {
+    padding: 6.5px 10.2px;
+    color: #fff;
+    background: red;
+    border: none;
+    border-radius: 2px;
+}
+
+.header-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 30px;
+}
+
+.header-text p {
+    font-size: 20px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.email input {
+    padding: 15px 20px;
+    width: 100%;
+
+}
+
+.email .start-btn {
+    font-size: 16px;
+    padding: 8px 20px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 8px;
+}
+
+.features img {
+    width: 100%;
+}
+
+.common-feature {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+    padding: 3em 1em;
+    width: 100%;
+}
+
+.common-feature h1 {
+    font-size: 25px;
+}
+
+.common-feature p {
+    line-height: 20px;
+
+}
+
+.common-feature .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.mobile-image {
+    position: relative;
+
+}
+
+.download-demo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #757575;
+    position: absolute;
+    padding: 4px 100px 4px 10px;
+    border-radius: 10px;
+    gap: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3em;
+    background: #000;
+}
+
+.download-demo .logo img {
+    width: 2em;
+    height: 3em;
+}
+
+.download-demo .movie-name h2 {
+    font-size: 15px;
+    width: 8em;
+}
+
+.download-demo .movie-name p {
+    font-size: 12px;
+    color: #0071EB;
+}
+
+.download-demo .movie-name {
+    text-align: start;
+
+}
+
+
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    background: #000;
+    color: #fff;
+    padding: 2em 0;
+}
+
+.faqs>h1 {
+    text-align: center;
+}
+
+.faqs ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.faqs ul li {
+    background: #303030;
+    padding: 15px 15px;
+    width: 100%;
+    font-size: 18px;
+    position: relative;
+}
+
+.faqs ul li::after {
+    content: "+";
+    font-weight: 200;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1em;
+
+}
+
+.membership {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.membership h1 {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 1em 1.5em;
+    font-weight: 400;
+}
+
+.common-btn {
+    font-size: 16px;
+    padding: 8px 20px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+
+.footer {
+    color: #757575;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 2em;
+}
+
+.footer h1 {
+    font-size: 17px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2em;
+}
+
+.footer-nav li {
+    font-size: 14px;
+    margin-top: 1em;
+    list-style: none;
+    font-weight: 400;
+
+}
+
+.footer>button {
+    border: 1px solid #757575;
+    padding: 10px;
+    background: transparent;
+    color: #757575;
+    width: 8em;
+    font-size: 18px;
+}
+
+.footer>p {
+    font-size: 13px;
+}
+
+
+
+
+@media screen and (min-width: 550px) {
+    .header {
+        padding: 2.5em;
+
+    }
+
+    .header-text {
+        padding-top: 5em;
+    }
+
+    .header-text h1 {
+        font-size: 3.2em;
+        width: 10em;
+    }
+
+    .header-text p {
+        font-size: 20px;
+        width: 20em;
+    }
+
+    .email .email-input {
+        width: 33em;
+    }
+
+    .features h1 {
+        font-size: 2.5em;
+    }
+
+    .features p {
+        font-size: 20px;
+    }
+
+    .mobile-image .download-demo {
+        width: 20em;
+    }
+
+    .faqs>h1 {
+        font-size: 2.5em;
+    }
+
+    .faqs ul {
+        padding: 0 5em;
+    }
+
+    .membership h1 {
+        width: 30em;
+    }
+
+    .membership .email .email-input {
+        width: 38em;
+    }
+
+    .footer-nav .section-2 {
+        display: flex;
+        gap: 2em;
+    }
+
+
+
+    @media screen and (min-width: 740px) {
+        .header-text p {
+            font-size: 24px;
+        }
+
+        .email .email-input {
+            padding: 20px 10px;
+            width: 35em;
+        }
+
+        .second-feature .mobile-image .download-demo {
+            width: 25em;
+        }
+
+        .mobile-image .download-demo .logo img {
+            width: 3em;
+            height: 4em;
+        }
+
+        .mobile-image .download-demo .movie-name h2 {
+            font-size: 16px;
+        }
+
+        .mobile-image .download-demo .movie-name p {
+            font-size: 13px;
+        }
+
+        .footer {
+            padding: 5em;
+        }
+
+        .footer-nav {
+            gap: 4em;
+        }
+
+        .footer-nav .section-1 {
+            display: flex;
+            gap: 4em;
+        }
+
+        .footer-nav .section-2 {
+            gap: 4em;
+        }
+    }
+
+
+
+    @media screen and (min-width: 950px) {
+        .header {
+            padding-bottom: 12em;
+        }
+
+        .header .nav-bar .logo img {
+            width: 9em;
+        }
+
+        .nav-bar .nav .lang-btn {
+            padding: 9px;
+        }
+
+        .nav-bar .nav .sign-in-btn {
+            padding: 9px 20px;
+            font-size: 16px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+        }
+
+        .header .header-text p:nth-child(2) {
+            font-size: 28px;
+        }
+
+        .header .header-text p:nth-child(3) {
+            font-size: 20px;
+            width: 100%;
+        }
+
+        .header .email {
+            flex-direction: row;
+            gap: 0;
+        }
+
+        .email .email-input {
+            font-size: 16px;
+            width: 30em;
+        }
+
+        .email .start-btn {
+            font-size: 28px;
+            padding: 14.8px 20px;
+        }
+
+        .common-feature {
+            justify-content: space-between;
+            gap: 5em;
+            align-items: center;
+        }
+
+        .features .common-feature img {
+            width: 25em;
+            ;
+        }
+
+        .first-feature {
+            flex-direction: row;
+            padding: 2em 4em;
+        }
+
+        .second-feature {
+            flex-direction: row-reverse;
+            padding: 2em 4em;
+        }
+
+        .third-feature {
+            flex-direction: row;
+            padding: 2em 4em;
+        }
+
+        .fourth-feature {
+            flex-direction: row-reverse;
+            padding: 2em 4em;
+        }
+
+        .second-feature .mobile-image .download-demo {
+            width: 20em;
+            bottom: 1.5em;
+        }
+
+        .common-feature .text {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            width: 25em;
+            justify-content: space-around;
+        }
+
+        .common-feature .text h1 {
+            font-size: 3.125em;
+        }
+
+        .common-feature .text p {
+            font-size: 1.625em;
+            line-height: 35px;
+        }
+
+        .faqs>h1 {
+            font-size: 3.125em;
+        }
+
+        .faqs ul {
+            padding: 0 8em;
+            align-items: center;
+        }
+
+        .faqs ul li {
+            font-size: 1.625em;
+            padding: 1em;
+            min-width: 25em;
+            max-width: 800px;
+        }
+
+        .membership h1 {
+            width: 100%;
+            font-size: 1.2rem;
+
+        }
+
+        .membership .email {
+            flex-direction: row;
+            gap: 0;
+        }
+
+        .membership .email .email-input {
+            font-size: 16px;
+            width: 30em;
+        }
+
+        .membership .email button {
+            font-size: 28px;
+            padding: 14.8px 20px;
+        }
+
+        .footer-nav {
+            gap: 5em;
+        }
+
+        .footer-nav .section-1 {
+            gap: 5em;
+        }
+
+        .footer-nav .section-2 {
+            gap: 5em;
+        }
+    }
+
+
+
+    @media screen and (min-width:1000px) {
+        .footer {
+            padding: 8em 8em 5em 8em;
+        }
+
+        .footer-nav {
+            gap: 6em;
+        }
+
+        .footer-nav .section-1 {
+            gap: 6em;
+        }
+
+        .footer-nav .section-2 {
+            gap: 6em;
+        }
+    }
+
+
+    @media screen and (min-width: 1200px) {
+
+        .features .common-feature {
+            padding: 2em 10em;
+        }
+
+        .common-feature .text {
+            width: 30em;
+        }
+
+        .footer {
+            padding: 8em 8em 5em 8em;
+        }
+
+        .footer-nav {
+            gap: 7em;
+        }
+
+        .footer-nav .section-1 {
+            gap: 7em;
+        }
+
+        .footer-nav .section-2 {
+            gap: 7em;
+        }
+    }
+
+
+
+    @media screen and (min-width: 1440px) {
+
+        .header .nav-bar .logo img {
+            width: 11em;
+        }
+
+        .header .header-text h1 {
+            font-size: 4em;
+        }
+
+        .footer {
+            padding: 8em 8em 5em 20em;
+        }
+    }
+}
