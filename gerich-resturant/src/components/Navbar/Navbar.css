@@ -1,0 +1,18 @@
+ .full-screen_nav li{
+    margin: 0 1rem;
+    cursor: pointer
+}
+ .full-screen li:hover{
+    color: var(--color-grey);
+}
+
+.small-screen_nav li{
+    cursor: pointer;
+    color: var(--color-golden);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+}
+.small-screen_nav li:hover{
+    color: var(--color-white)
+}
