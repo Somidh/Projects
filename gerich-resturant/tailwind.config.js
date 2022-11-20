@@ -4,20 +4,37 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      
-      '2xl': {'max': '1535px'},
+
+      // Min-width
+
+      '5xlmin': { 'min': '1900px' },
+      // => @media (min-width: 2000px) {...}
+
+     
+
+
+      // Max-width
+
+      '2xl': { 'max': '1535px' },
       // => @media (max-width: 1535px) { ... }
 
-      'xl': {'max': '1279px'},
+      'xl': { 'max': '1279px' },
       // => @media (max-width: 1279px) { ... }
 
-      'lg': {'max': '1150px'},
+      'lg': { 'max': '1150px' },
       // => @media (max-width: 1150px) { ... }
 
-      'md': {'max': '767px'},
+      'md': { 'max': '767px' },
       // => @media (max-width: 767px) { ... }
 
-      'sm': {'max': '639px'},
+      '2md': { 'max': '900px' },
+      // => @media (max-width: 767px) { ... }
+
+
+      'sm': { 'max': '650px' },
+      // => @media (max-width: 639px) { ... }
+
+      's': { 'max': '450px' },
       // => @media (max-width: 639px) { ... }
     }
   },
