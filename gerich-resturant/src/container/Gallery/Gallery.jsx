@@ -9,6 +9,7 @@ const galleryImages = [images.gallery01, images.gallery02, images.gallery03, ima
 
 const Gallery = () => {
   
+
   const scrollRef = useRef(null)
 
   const scroll = (direction) => {
@@ -18,8 +19,8 @@ const Gallery = () => {
   }
 
   return (
-    <div className='flex__center bg-[#0C0C0C] py-16 pl-24 pr-0 lg:flex-col 2md:py-16 2md:pr-0 2md:pl-16 sm:'>
-      <div className='flex-1 flex justify-center items-start flex-col min-w-[500px] pr-8 5xlmin:min-w-[1000px] 5xlmin:pr-16'>
+    <div className='flex__center bg-[#0C0C0C] py-16 pl-24 pr-0 lg:flex-col 2md:py-16 2md:pr-0 2md:pl-16 sm:py-16 sm:pr-0 sm:pl-8  '>
+      <div className='flex-1 flex justify-center items-start flex-col min-w-[500px] pr-8 5xlmin:min-w-[1000px] 5xlmin:pr-16 sm:min-w-full'>
         <SubHeading title="Instagram" />
         <h1 className='headtext__cormorant'>Photo Gallery</h1>
         <p className='p__opensans text-[#AAA] mt-8 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, accusamus! Lorem ipsum dolor sit amet.</p>
@@ -29,7 +30,7 @@ const Gallery = () => {
       <div className='flex-1 flex max-w-[50%] relative lg:max-w-full lg:my-20 lg:mx-0'>
         <div className='images_container flex w-max overflow-x-scroll' ref={scrollRef}>
         {galleryImages.map((image, index) => (
-          <div className='flex__center relative min-w-[301px] h-[447px] mr-8 5xlmin:min-w-[400px] 5xlmin:h-[550px]' key={`gallery_image-${index + 1}`}> 
+          <div className='flex__center relative min-w-[301px] h-[447px] mr-8 5xlmin:min-w-[400px] 5xlmin:h-[550px] sm:min-w-[240px] sm:h-[320px]' key={`gallery_image-${index + 1}`}> 
             <img className='w-full h-full object-cover opacity-100  duration-300 ease-linear hover:opacity-40' src={image} alt="gallery" />
             <BsInstagram className='absolute cursor-pointer opacity-70 ' fontSize={32} color="#fff"  transition="0.5 ease"   />
           </div>

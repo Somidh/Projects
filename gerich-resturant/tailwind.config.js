@@ -10,9 +10,6 @@ module.exports = {
       '5xlmin': { 'min': '1900px' },
       // => @media (min-width: 2000px) {...}
 
-     
-
-
       // Max-width
 
       '2xl': { 'max': '1535px' },
@@ -27,7 +24,7 @@ module.exports = {
       'md': { 'max': '767px' },
       // => @media (max-width: 767px) { ... }
 
-      '2md': { 'max': '900px' },
+      '2md': { 'max': '950px' },
       // => @media (max-width: 767px) { ... }
 
 
